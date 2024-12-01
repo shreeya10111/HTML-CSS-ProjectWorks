@@ -1,0 +1,499 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b2b06a;
+    color: white;
+    padding: 15px 20px;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #823c02;
+    text-decoration:overline underline;
+   
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap:30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.3em;
+
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+header nav ul .btn{
+    display: inline-block;
+    
+    background-color: #bf5c0b;
+    color: white;
+    padding: 6px 25px;
+    font-size: 1.2rem;
+}
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    text-align: left;
+    color: white;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("Foodweb.jpg") no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* Text Content in the Hero Section */
+.hero h2 {
+    font-size: 3rem;
+    margin: 0;
+    color: #000000;
+    text-shadow: 20px 12px 15px  rgb(106, 230, 209); 
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px  black;
+    margin-right: 60%;
+    display: inline-block;
+    font-style: italic;
+    font-weight:300;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e55337;
+}
+/* Rotating Circle Container */
+.hero .rotating-circle {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 70%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center */
+    width: 550px;
+    height: 550px;
+    border: 4px solid rgba(255, 255, 255, 0.7); /* Circle border */
+    border-radius: 50%; /* Makes it a circle */
+    animation: rotate 4s linear infinite; /* Rotates continuously */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the image stays within the circle */
+    z-index: 1; /* Above the background but below text */
+}
+
+/* Food Image Inside Circle */
+.hero .rotating-circle img {
+    width: 100%;
+    height: 120%;
+    object-fit:cover; /* Ensures the image fits well */
+    border-radius: 100%; /* Ensures image matches the circle shape */
+}
+
+/* Rotation Animation */
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg); /* Starts at 0 degrees */
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg); /* Ends at 360 degrees */
+    }
+}
+
+
+
+/* About Section */
+.about {
+    padding: 20px 20px;
+    background-color: #e3e2c3;
+    
+}
+
+
+/* Menu Section */
+.menu {
+    padding: 50px 20px;
+    background-color: #f0ec8d;
+}
+
+.menu .menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu .menu-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu .menu-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.menu .menu-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.menu .menu-item p {
+    font-size: 1.1em;
+    color: #e51111;
+    font-weight: bolder;
+}
+/* Reservation Section */
+.Reservation {
+    padding: 30px;
+    background-color: #520e0e;
+   
+     
+}
+.Reservation h1 {
+    text-align: center;
+   font-size: 30px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    
+
+}
+
+/* Container for Form and Video */
+.reservation-container {
+    display: flex;
+    gap: 20px; /* Gap between form and video */
+   max-width: 100%;
+ 
+    
+}
+
+/* Form Container */
+.form-container {
+    flex: 1;
+    max-width: 700px; /* Limit form width */
+    max-height: 800px;
+    padding: 25px;
+    background-color: #894e4e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 100 auto;
+}
+
+/* Form Styling */
+.form-container label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    color: #f5ed00;
+}
+
+.form-container input {
+    width: 80%;
+    max-height: 100px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.form-container button {
+    width: 70%;
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 555px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #ed7ac3;
+}
+
+.video-container video {
+    width: 100%;
+    height: 700px;
+    max-width: 100%; /* Make video responsive */
+    border-radius: 8px;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .reservation-container {
+        flex-direction: column; /* Stack form and video vertically */
+        text-align: center; /* Center content */
+    }
+
+    .form-container,
+    .video-container {
+        max-width: 100%; /* Ensure both form and video take full width on small screens */
+    }
+
+    .form-container {
+        margin: 0 20px; /* Add some margin for spacing */
+    }
+}
+/* Menu Section */
+.popular {
+    padding: 50px 20px;
+    background-color: #f0ec8d;
+    
+}
+.popular h2{
+    font-size: 35px;
+    font-style: italic;
+    font-family: cursive;
+    color: #000000;
+    text-decoration:underline;
+}
+
+.popular .popular-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.popular .popular-dishes {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popular .popular-dishes img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.popular .popular-dishes h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.popular .popular-dishes p {
+    font-size: 1.1em;
+    color: #e51111;
+    font-weight: bolder;
+}
+/* Review Section */
+.review {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.review h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Container for all client reviews */
+.client-reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 30px; 
+}
+
+/* Individual Client Review */
+.client-review {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.client-review:hover {
+    transform: scale(1.05); /* Makes it grow slightly on hover */
+}
+
+/* Client Review Image (Profile Picture) */
+.client-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fits well inside the circle */
+    margin-bottom: 15px;
+}
+
+/* Client Name */
+.client-review h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Review Text */
+.client-review p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .client-reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client-review {
+        width: 90%; /* Makes each review take full width on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+/* General styles */
+.contact {
+    padding: 20px 10px;
+    background-color: #e3e2c3;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Left side content */
+.contact-left {
+    flex: 5;
+    text-align: center;
+}
+
+/* Heading and contact details */
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.social-links {
+    margin-top: 5px;
+    margin-left: 20px;
+  
+}
+
+.social-icon {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display:flexbox;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.social-icon:hover {
+    color: #4b3de6;  /* Change color on hover */
+}
+
+/* Right side navigation */
+.contact-right {
+    flex: 2;
+    text-align: left;
+}
+
+.contact-right ul {
+    list-style: none;
+    text-decoration: underline;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.contact-right ul li {
+    margin: 10px 0;
+}
+
+.contact-right ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contact-right ul li a:hover {
+    color:  #4b3de6;
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+

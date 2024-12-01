@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="./Resturant.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Delicious Bites</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#popular">Best Sellers</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#review">Reviews</a></li>
+                <a href="#Reservation" class="btn">Book a Table</a>
+                <a href="#SignIn" class="btn">Sign In</a>
+                
+            </ul>
+            
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="background-image"></div>
+        <h2>Welcome to Delicious Bites.</h2>
+        <p>Your favorite place for delightful food, where every bite brings joy to your taste buds! Whether you're here for a quick meal or a leisurely dining experience, we promise a culinary journey like no other.</p>
+        <a href="#menu" class="btn">Explore Food-Menu</a>
+        <div class="rotating-circle">
+            <img src="foodplate.jpg" alt="Rotating Pizza">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Delicious Bites, we serve the finest dishes crafted with love and fresh ingredients.</p>
+        <p>Whether you're in the mood for a comforting pizza, a flavorful pasta, or a refreshing drink, we have something for everyone.</p>
+        <p>We pride ourselves on offering a warm and inviting atmosphere, making every dining experience special. Join us and savor the true taste of happiness in every bite!</p>
+        <a href="#more-about-us" class="btn">Read More>>></a>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu Items</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="pizza.jpg" alt="Pizza">
+                <h3>Delicious Mixed Pizza</h3>
+                <p>RS 890</p>
+            </div>
+            <div class="menu-item">
+                <img src="burger.jpg" alt="Burger">
+                <h3>Cheesy Burger</h3>
+                <p>RS 350</p>
+            </div>
+            <div class="menu-item">
+                <img src="pasta.jpg" alt="Pasta">
+                <h3>Creamy Cheese Pasta</h3>
+                <p>RS 550</p>
+            </div>
+            <div class="menu-item">
+                <img src="Frappe.jpg" alt="Frappe">
+                <h3>Chocolate Caramel Frappuccino</h3>
+                <p>RS 390</p>
+            </div>
+            <div class="menu-item">
+                <img src="strawberryshake.jpg" alt="Strawberry">
+                <h3>Strawberry Milkshake</h3>
+                <p>RS 350</p>
+            </div>
+            <div class="menu-item">
+                <img src="momo.jpg" alt="Momo">
+                <h3>Chicken Momo</h3>
+                <p>RS 300</p>
+            </div>
+            <div class="menu-item">
+                <img src="spaghetti.jpg" alt="Spaghetti">
+                <h3>Mixed bowl Spaghetti</h3>
+                <p>RS 495</p>
+            </div>
+            <div class="menu-item">
+                <img src="chickenmasala.jpg" alt="chickenmasala">
+                <h3>Chicken Masala </h3>
+                <p>RS 475</p>
+            </div>
+            <div class="menu-item">
+                <img src="fries.jpg" alt="fries">
+                <h3>French Fries </h3>
+                <p>RS 280</p>
+            </div>
+            <div class="menu-item">
+                <img src="prawn.png" alt="prawn">
+                <h3>Prawn Tempura</h3>
+                <p>RS 895</p>
+            </div>
+        
+        </div>
+    </section>
+    <section id="Reservation" class="Reservation">
+        <h1>Book A Table Online</h1>
+        <div class="reservation-container">
+            <!-- Form Section -->
+            <div class="form-container">
+                <form action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+                    <label for="number">Phone Number</label>
+                    <input type="tel" id="number" name="number" placeholder="Enter your phone number" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+    
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required>
+    
+                    <label for="people">Number of People</label>
+                    <input type="number" id="people" name="people" placeholder="How many people?" required>
+    
+                    <button type="submit" class="btn">Book Now</button>
+                </form>
+            </div>
+    
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="foodvideo.mp4" type="video/mp4">
+                    
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="foodvideo.mp4" type="video/mp4">
+                    
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    <section id="popular" class="popular">
+        <h2>Our Most Popular Dishes</h2>
+        <div class="popular-container">
+            <div class="popular-dishes">
+                <img src="Frappe.jpg" alt="Frappe">
+                <h3>Chocolate Caramel Frappuccino</h3>
+                <p>RS 390</p>
+            </div>
+            <div class="popular-dishes">
+                <img src="pasta.jpg" alt="Pasta">
+                <h3>Creamy Cheese Pasta</h3>
+                <p>RS 550</p>
+            </div>
+            <div class="popular-dishes">
+                <img src="spaghetti.jpg" alt="Spaghetti">
+                <h3>Mixed bowl Spaghetti</h3>
+                <p>RS 495</p>
+            </div>
+            <div class="popular-dishes">
+                <img src="chickenmasala.jpg" alt="chickenmasala">
+                <h3>Chicken Masala </h3>
+                <p>RS 475</p>
+            </div>    
+            <div class="popular-dishes">
+                <img src="prawn.png" alt="prawn">
+                <h3>Prawn Tempura</h3>
+                <p>RS 895</p>
+            </div>
+        
+        </div>
+</section>
+
+
+
+    <!-- Review Section -->
+<section id="review" class="review">
+    <h2>What Our Client Says!!!</h2>
+    <div class="client-reviews-container">
+        <div class="client-review">
+            <p>The pizza at Delicious Bites is absolutely mouthwatering. I love the crisp crust and fresh toppings. Definitely my go-to place!</p>
+            <img src="elsa.jpg" alt="Pizza" class="client-photo">
+            <h3>Shreeya Shrestha</h3>
+        </div>
+        <div class="client-review">
+            <p>I can't get enough of their pasta! It's creamy, flavorful, and always served hot. Perfect comfort food for any day!</p>
+            <img src="aana.jpg" alt="Pasta" class="client-photo">
+            <h3>Simran Shrestha</h3>
+        </div>
+        <div class="client-review">
+            <p>The burger was perfect – juicy, flavorful, and topped with all the right ingredients. I’ll definitely be coming back for more!</p>
+            <img src="sup.jpg" alt="Burger" class="client-photo">
+            <h3>Superb Shrestha</h3>
+        </div>
+
+        <div class="client-review">
+            <p>I had the strawberry milkshake, and it was the best one I’ve ever had! Creamy, sweet, and packed with flavor.</p>
+            <img src="prat.jpg" alt="Strawberry Shake" class="client-photo">
+            <h3>Pratyush Sigdel</h3>
+        </div>    
+    </div>
+</section>
+
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="contact-left">
+        <h2>Contact Us</h2>
+        <p>Visit us or give us a call!</p>
+        <p>Email: contact@deliciousbites.com</p>
+        <p>Phone: 977+ 9008363873</p>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="contact-right">
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#Reservation">Book a Table</a></li>
+            <li><a href="#menu">Food Menu</a></li>
+            <li><a href="#popular">Popular Food Items</a></li>
+            <li><a href="#terms">Terms and Conditions</a></li>
+        </ul>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Delicious Bites. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
