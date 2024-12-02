@@ -3,18 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UI/UX Evening Tasks</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            color: black;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #a18d65;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 1.3rem;
+            transition: color 0.3s ease;
+            font-weight: bold;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .navbar ul li a:hover {
+            color: #2e00fd;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #e99dc0;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #000000;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #000000;
+            font-style: italic;
+        }
+
+        /* Task List Styles */
+        .task-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .task-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .task-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .task-card a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .task-card a:hover {
+            color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #5c5341;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <h1>UI/UX Evening Taskss</h1>
-    <ol>
-        <li><a href="./Table/Table.html">Table</a></li>
-        <li><a href="./Wikipedia/Wikipedia.html">Wikipedia</a></li>
-        <li><a href="./Blog/Blog.html">Blog</a></li>
-        <li><a href="./AdminPanel/Adminpanel.html">Admin panel</a></li>
-        <li><a href="./GalleryShop/Gallery.html">Gallery</a></li>
-        <li><a href="./SocialSite/Socialmediasite.html">Social Media Site</a></li>
-        <li><a href="./ResturantSite/Resturant.html">Resturant Website</a></li>
-    </ol>
+    <nav class="navbar">
+        <div class="logo">UI/UX Tasks</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h1>HTML And CSS Projects </h1>
+        <p>Explore through the projects down below!</p>
+    </div>
+    <div class="task-list">
+        <div class="task-card">
+            <a href="./Table/Table.html">Table</a>
+        </div>
+        <div class="task-card">
+            <a href="./Wikipedia/Wikipedia.html">Wikipedia</a>
+        </div>
+        <div class="task-card">
+            <a href="./Blog/Blog.html">Blog</a>
+        </div>
+        <div class="task-card">
+            <a href="./AdminPanel/Adminpanel.html">Admin Panel</a>
+        </div>
+        <div class="task-card">
+            <a href="./GalleryShop/Gallery.html">Gallery</a>
+        </div>
+        <div class="task-card">
+            <a href="./SocialSite/Socialmediasite.html">Social Media Site</a>
+        </div>
+        <div class="task-card">
+            <a href="./ResturantSite/Resturant.html">Restaurant Website</a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 UI/UX Evening Tasks. Designed with ❤️ by  <a href="#">Shreeya Shrestha</a>.
+    </footer>
 </body>
 </html>
